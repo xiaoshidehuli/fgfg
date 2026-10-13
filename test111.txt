@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户留言簿</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table,td{
+            border:1px solid #333;
+        }
+        td{
+            padding:8px;
+        }
+        h1{
+            font-size:60px;
+            font-weight:bold;
+            margin:10px 0;
+        }
+        .btn-box{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1>用户留言簿</h1>
+    <hr>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="username"></td>
+                <td>密码：</td>
+                <td><input type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td>电子邮箱：</td>
+                <td><input type="email" name="email"></td>
+                <td>民族：</td>
+                <td>
+                    <select name="nation">
+                        <option value="han" selected>汉族</option>
+                        <option value="mongolian">蒙古族</option>
+                        <option value="hui">回族</option>
+                        <option value="tibetan">藏族</option>
+                        <option value="tibetan">土家族</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="male" id="male" checked>
+                    <label for="male">男</label>
+                    <input type="radio" name="sex" value="female" id="female">
+                    <label for="female">女</label>
+                </td>
+                <td>爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="football" id="fb" checked>
+                    <label for="fb">足球</label>
+                    <input type="checkbox" name="hobby" value="basketball" id="bb">
+                    <label for="bb">篮球</label>
+                    <input type="checkbox" name="hobby" value="badminton" id="bm">
+                    <label for="bm">羽毛球</label>
+                    <input type="checkbox" name="hobby" value="badminton" id="bm">
+                    <label for="bm">乒乓球</label>
+                </td>
+            </tr>
+            <tr>
+                <td>留言：</td>
+                <td><textarea name="msg" rows="5" cols="40">请留下您的宝贵意见！</textarea></td>
+                <td>文件</td>
+                <td>
+                    <input type="file" name="upfile">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" class="btn-box">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
